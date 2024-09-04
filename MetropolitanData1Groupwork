@@ -2,3 +2,7 @@ project:
   type: website
   output-dir: docs
 copy NUL .nojekyll
+quarto render
+git add docs
+git commit -m "Publish site to docs/"
+git push
